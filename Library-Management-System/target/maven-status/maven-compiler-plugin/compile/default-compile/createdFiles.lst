@@ -1,0 +1,9 @@
+com\tka\LibraryManagementSystemApplication.class
+com\tka\repository\UserRepository.class
+com\tka\entity\User.class
+com\tka\repository\CorsGlobalConfig.class
+com\tka\repository\BookRepository.class
+com\tka\controller\BookController.class
+com\tka\entity\Book.class
+com\tka\controller\UserController.class
+com\tka\service\BookService.class
