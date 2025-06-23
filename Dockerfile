@@ -1,11 +1,11 @@
-# Use official OpenJDK image
+# Use official OpenJDK image as base
 FROM openjdk:17-jdk-slim
 
-# Add a volume pointing to /tmp
-VOLUME /tmp
-
-# Copy the jar file
+# Copy the JAR file from the target folder to the container
 COPY target/*.jar app.jar
 
-# Run the jar file
+# Expose the default Spring Boot port (Railway maps PORT env variable)
+EXPOSE 8080
+
+# Start the Spring Boot app
 ENTRYPOINT ["java", "-jar", "/app.jar"]
